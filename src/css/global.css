@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    background: #150f0f;
+}
+
+body, .container, .main-view, webview {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.main-view {
+    flex: 1;
+}

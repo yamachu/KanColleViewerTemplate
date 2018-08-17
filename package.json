@@ -1,0 +1,13 @@
+{
+  "name": "kancolleviewertemplate",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^2.0.7",
+    "rxjs": "^6.2.2"
+  }
+}

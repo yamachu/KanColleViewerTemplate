@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>KanColleViewer</title>
+  <link rel="stylesheet" type="text/css" href="./css/global.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main-view">
+      <webview
+        id="game_main"
+        src="http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/"
+        disablewebsecurity
+        allowpopups
+        partition="persist:kcv"
+        autosize="on"
+      />
+    </div>
+  </div>
+</body>
+
+<script src="./js/gameWindowController.js"></script>
+</html>
