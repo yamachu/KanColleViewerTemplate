@@ -42,7 +42,10 @@ APIによってはBodyがundefinedの場合もあるため、`response.Body.slic
 ```js
 window.game.jsonResponse.subscribe((v) => {
   if (v.Body !=== undefined) {
-    console.log(`URL: ${v.URL}, Body: ${v.Body.slice(7)}`);
+    // 文字列だけだとわからんな
+    // console.log(`URL: ${v.URL}, Body: ${v.Body.slice(7)}`);
+    console.log(`URL: ${v.URL}`);
+    console.log(JSON.parse(v.Body.slice(7)));
   }
 });
 ```
