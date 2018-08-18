@@ -23,4 +23,12 @@
 </body>
 
 <script src="./js/gameWindowController.js"></script>
+<script>
+  let webview = document.getElementById('game_main');
+  webview.addEventListener('dom-ready', () => {
+    if (webview.getURL() === 'http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/')
+      webview.insertCSS('div#w > :not(#main-ntg) { display: none;} div#page > :not(#area-game) { display: none; } #area-game { max-width: 1200px; }');
+  });
+</script>
+
 </html>
